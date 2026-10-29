@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#161e38" />
+    </linearGradient>
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="50%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#8b5cf6" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" />
+
+  <!-- Background grid lines -->
+  <g stroke="#334155" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="100" x2="800" y2="100" />
+    <line x1="0" y1="200" x2="800" y2="200" />
+    <line x1="0" y1="300" x2="800" y2="300" />
+    <line x1="0" y1="400" x2="800" y2="400" />
+    <line x1="160" y1="0" x2="160" y2="500" />
+    <line x1="320" y1="0" x2="320" y2="500" />
+    <line x1="480" y1="0" x2="480" y2="500" />
+    <line x1="640" y1="0" x2="640" y2="500" />
+  </g>
+
+  <!-- App Window Mockup -->
+  <g transform="translate(60, 40)" filter="url(#cardShadow)">
+    <!-- Browser Window Header -->
+    <rect width="680" height="420" rx="16" fill="url(#cardGrad)" stroke="#334155" stroke-width="1.5" />
+    <rect width="680" height="46" rx="16" fill="#0f172a" />
+    <rect y="36" width="680" height="10" fill="#0f172a" />
+    <line x1="0" y1="46" x2="680" y2="46" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Window Buttons -->
+    <circle cx="28" cy="23" r="6" fill="#ef4444" />
+    <circle cx="48" cy="23" r="6" fill="#eab308" />
+    <circle cx="68" cy="23" r="6" fill="#22c55e" />
+
+    <!-- URL Bar -->
+    <rect x="110" y="12" width="460" height="22" rx="11" fill="#1e293b" />
+    <text x="340" y="27" text-anchor="middle" font-family="monospace" font-size="11" fill="#94a3b8">https://bazar-dor-ecru-psi.vercel.app</text>
+
+    <!-- Top App Bar inside mockup -->
+    <g transform="translate(30, 65)">
+      <!-- App Logo / Title -->
+      <rect x="0" y="0" width="36" height="36" rx="8" fill="url(#primaryGlow)" />
+      <text x="18" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="900" fill="#ffffff">ব</text>
+      <text x="48" y="24" font-family="system-ui, sans-serif" font-size="18" font-weight="800" fill="#f8fafc">বাজার দর <tspan fill="#10b981" font-size="13" font-weight="600">(Bazar Dor)</tspan></text>
+      <text x="48" y="38" font-family="system-ui, sans-serif" font-size="10.5" fill="#94a3b8">Daily Essential Commodity Rates in Bangladesh</text>
+
+      <!-- Live badge -->
+      <rect x="520" y="6" width="100" height="24" rx="12" fill="#064e3b" stroke="#059669" stroke-width="1" />
+      <circle cx="534" cy="18" r="4" fill="#34d399" />
+      <text x="546" y="22" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#6ee7b7">Live On Vercel</text>
+    </g>
+
+    <!-- Market Highlights / Cards inside app -->
+    <g transform="translate(30, 130)">
+      <!-- Card 1: Rice / চাল -->
+      <rect x="0" y="0" width="190" height="120" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+      <text x="16" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">নাজিরশাইল চাল</text>
+      <text x="16" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Nazirshail Rice (1 Kg)</text>
+      <text x="16" y="85" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#10b981">৳ ৭২.০০</text>
+      <rect x="16" y="94" width="70" height="16" rx="8" fill="#14532d" />
+      <text x="51" y="106" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#4ade80">- ৳ ১.৫০ (আজকে)</text>
+
+      <!-- Card 2: Onion / পেঁয়াজ -->
+      <rect x="215" y="0" width="190" height="120" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+      <text x="231" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">দেশি পেঁয়াজ</text>
+      <text x="231" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Local Onion (1 Kg)</text>
+      <text x="231" y="85" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#38bdf8">৳ ৮৫.০০</text>
+      <rect x="231" y="94" width="65" height="16" rx="8" fill="#082f49" />
+      <text x="263" y="106" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#38bdf8">স্থিতিশীল</text>
+
+      <!-- Card 3: Broiler Chicken / ব্রয়লার মুরগি -->
+      <rect x="430" y="0" width="190" height="120" rx="12" fill="#0b1120" stroke="#1e293b" stroke-width="1.5" />
+      <text x="446" y="30" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#f8fafc">ব্রয়লার মুরগি</text>
+      <text x="446" y="48" font-family="system-ui, sans-serif" font-size="11" fill="#64748b">Broiler Chicken (1 Kg)</text>
+      <text x="446" y="85" font-family="system-ui, sans-serif" font-size="22" font-weight="800" fill="#f43f5e">৳ ১৯৫.০০</text>
+      <rect x="446" y="94" width="70" height="16" rx="8" fill="#4c0519" />
+      <text x="481" y="106" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9.5" font-weight="600" fill="#fb7185">+ ৳ ৫.০০</text>
+    </g>
+
+    <!-- Table mockup at bottom -->
+    <g transform="translate(30, 270)">
+      <rect x="0" y="0" width="620" height="70" rx="10" fill="#0f172a" stroke="#1e293b" stroke-width="1" />
+      <text x="20" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">পণ্য / Item</text>
+      <text x="200" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">বিভাগ / Category</text>
+      <text x="360" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">আজকের দাম / Today</text>
+      <text x="520" y="24" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">স্ট্যাটাস / Trend</text>
+      <line x1="10" y1="34" x2="610" y2="34" stroke="#1e293b" stroke-width="1" />
+      <text x="20" y="55" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#e2e8f0">সয়াবিন তেল (১ লিটার)</text>
+      <text x="200" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#cbd5e1">ভোজ্য তেল</text>
+      <text x="360" y="55" font-family="system-ui, sans-serif" font-size="12" font-weight="700" fill="#10b981">৳ ১৬৫.০০</text>
+      <text x="520" y="55" font-family="system-ui, sans-serif" font-size="12" fill="#38bdf8">নিয়মিত সরবরাহ</text>
+    </g>
+  </g>
+</svg>
