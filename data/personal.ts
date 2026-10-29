@@ -21,7 +21,7 @@ export interface EducationItem {
 }
 
 export const personalData = {
-  name: "Riyad Mia",
+  name: "Tamim mia Riyad",
   shortName: "Riyad",
   designation: "Aspiring Full Stack Developer",
   statusBadge: "Available for Junior Roles & Learning Opportunities",
@@ -34,15 +34,15 @@ export const personalData = {
     github: "https://github.com/riyad-devx",
     email: "mailto:mdriyadmia01766@gmail.com",
     whatsapp: "https://wa.me/8801747379373",
-    linkedin: null, // Placeholder - indicated as "Coming Soon"
+    linkedin: "https://www.linkedin.com/in/md-riyad32/",
   },
   hero: {
     tagline: "Building Clean, Responsive & Scalable Web Applications",
-    bio: "Hi, I'm Riyad Mia, a passionate developer pursuing a Diploma in Computer Science & Technology. I specialize in building responsive frontends and full-stack JavaScript applications with React, Next.js, Node.js, and MongoDB.",
+    bio: "Hi, I'm Tamim mia Riyad, a passionate developer pursuing a Diploma in Computer Science & Technology. I specialize in building responsive frontends and full-stack JavaScript applications with React, Next.js, Node.js, and MongoDB.",
   },
   about: {
     intro:
-      "I am an Aspiring Full Stack Developer based in Bangladesh, currently pursuing my Diploma in Computer Science and Technology (CST) at Moulvibazar Polytechnic Institute. My journey into web development began with a strong curiosity about how interactive websites work beneath the surface.",
+      "I am an Aspiring Full Stack Developer based in Bangladesh, currently pursuing my Diploma in Computer Science and Technology (CST) at Moulvibazar Government Polytechnic Institute. My journey into web development began with a strong curiosity about how interactive websites work beneath the surface.",
     paragraphs: [
       "Over the course of my studies and independent projects, I have immersed myself in modern JavaScript, React, and Next.js. I thoroughly enjoy taking an idea from a blank canvas to a fully responsive, intuitive web application with clean, maintainable code.",
       "Beyond building user interfaces with Tailwind CSS and React, I am actively honing my full-stack capabilities with Node.js, Express.js, and MongoDB. I enjoy designing RESTful API endpoints, organizing data schemas, and ensuring reliable communication between frontend clients and backend servers.",
@@ -51,19 +51,23 @@ export const personalData = {
     highlights: [
       {
         title: "Dedicated Problem Solver",
-        description: "Approaching coding challenges systematically through hands-on project creation and debugging.",
+        description:
+          "Approaching coding challenges systematically through hands-on project creation and debugging.",
       },
       {
         title: "Responsive UI Architecture",
-        description: "Crafting modern mobile-first interfaces that look elegant and perform smoothly across all devices.",
+        description:
+          "Crafting modern mobile-first interfaces that look elegant and perform smoothly across all devices.",
       },
       {
         title: "Modern JavaScript Ecosystem",
-        description: "Focusing on React, Next.js App Router, TypeScript basics, and modern Tailwind CSS.",
+        description:
+          "Focusing on React, Next.js App Router, TypeScript basics, and modern Tailwind CSS.",
       },
       {
         title: "Continuous Learner",
-        description: "Constantly expanding knowledge through daily coding, documentation study, and version-controlled projects.",
+        description:
+          "Constantly expanding knowledge through daily coding, documentation study, and version-controlled projects.",
       },
     ],
   },
@@ -77,7 +81,10 @@ export const personalData = {
         { name: "CSS3", level: "Responsive Layouts & Flex/Grid" },
         { name: "JavaScript (ES6+)", level: "Async, DOM, Modern Syntax" },
         { name: "React.js", level: "Hooks, State, Component Lifecycle" },
-        { name: "Next.js (App Router)", level: "Server Components & Dynamic Routing" },
+        {
+          name: "Next.js (App Router)",
+          level: "Server Components & Dynamic Routing",
+        },
         { name: "Tailwind CSS", level: "Utility-First Responsive Styling" },
       ],
     },
@@ -89,7 +96,10 @@ export const personalData = {
         { name: "Node.js", level: "Runtime Environment & Modules" },
         { name: "Express.js", level: "Middleware, Routing & Controllers" },
         { name: "REST APIs", level: "CRUD Endpoints & HTTP Conventions" },
-        { name: "JSON & Async Handling", level: "API Integration & Error Handling" },
+        {
+          name: "JSON & Async Handling",
+          level: "API Integration & Error Handling",
+        },
       ],
     },
     {
@@ -99,7 +109,10 @@ export const personalData = {
       skills: [
         { name: "MongoDB", level: "NoSQL Collections & Documents" },
         { name: "Mongoose", level: "Schema Validation & Data Modeling" },
-        { name: "Database Design Basics", level: "Relationships & Query Optimization" },
+        {
+          name: "Database Design Basics",
+          level: "Relationships & Query Optimization",
+        },
       ],
     },
     {
@@ -120,10 +133,10 @@ export const personalData = {
     {
       degree: "Diploma in Engineering",
       field: "Computer Science and Technology (CST)",
-      institution: "Moulvibazar Polytechnic Institute",
+      institution: "",
       location: "Moulvibazar, Sylhet, Bangladesh",
-      currentStatus: "Currently in 3rd Semester",
-      period: "2023 – Present",
+      currentStatus: "Diploma in Engineering — In Progress",
+      period: "Currently Pursuing",
       description:
         "Building a solid academic foundation in computer science fundamentals, computer systems, and programming, complemented by intensive self-directed web development.",
       highlights: [

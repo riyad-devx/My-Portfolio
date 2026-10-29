@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     "Next.js Developer",
     "Node.js",
     "MongoDB",
-    "Moulvibazar Polytechnic Institute",
+    "Moulvibazar Government Polytechnic Institute",
     "Bazar Dor",
     "Frontend Developer",
     "Portfolio",

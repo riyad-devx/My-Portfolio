@@ -80,7 +80,7 @@ export default function Navbar() {
           <Link
             href={isHomePage ? "#home" : "/"}
             className="flex items-center gap-2.5 group focus:outline-none focus:ring-2 focus:ring-violet-500 rounded-lg p-1"
-            aria-label="Riyad Mia Portfolio Home"
+            aria-label="Tamim mia Riyad Portfolio Home"
           >
             <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-500 p-0.5 shadow-md shadow-violet-900/30 group-hover:scale-105 transition-transform">
               <div className="flex h-full w-full items-center justify-center rounded-[10px] bg-[#090d1a]">

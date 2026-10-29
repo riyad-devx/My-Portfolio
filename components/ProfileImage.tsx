@@ -29,7 +29,7 @@ export default function ProfileImage({ className = "" }: ProfileImageProps) {
         <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-[#0d1224] border-2 border-[#1e293b]">
           <Image
             src={imageSrc}
-            alt="Riyad Mia - Aspiring Full Stack Developer"
+            alt="Tamim mia Riyad - Aspiring Full Stack Developer"
             fill
             sizes="(max-width: 640px) 256px, (max-width: 1024px) 288px, 320px"
             priority

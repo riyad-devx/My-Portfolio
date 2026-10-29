@@ -1,4 +1,4 @@
-# Riyad Mia – Developer Portfolio Website
+# Tamim Mia Riyad – Developer Portfolio Website
 
 A modern, high-performance developer portfolio built with **Next.js 16 (App Router)**, **TypeScript**, and **Tailwind CSS**. Designed in a premium dark navy aesthetic with violet and subtle cyan gradient accents, responsive mobile drawer navigation, dynamic project details pages, accessible contrast, and zero external runtime dependencies.
 

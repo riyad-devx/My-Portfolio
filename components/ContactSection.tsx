@@ -12,7 +12,7 @@ import {
   ExternalLink,
   Sparkles,
 } from "lucide-react";
-import { GithubIcon } from "./Icons";
+import { GithubIcon, LinkedinIcon } from "./Icons";
 import { personalData } from "@/data/personal";
 
 export default function ContactSection() {
@@ -193,8 +193,8 @@ export default function ContactSection() {
               </a>
             </div>
 
-            {/* Location & GitHub Quick Box */}
-            <div className="grid grid-cols-2 gap-3 pt-2">
+            {/* Location & Social Quick Box */}
+            <div className="space-y-3 pt-2">
               <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
                 <div className="flex items-center gap-2 text-violet-400 mb-1">
                   <MapPin className="w-4 h-4" />
@@ -203,20 +203,38 @@ export default function ContactSection() {
                 <p className="text-xs text-slate-400">{personalData.location}</p>
               </div>
 
-              <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
-                <div className="flex items-center gap-2 text-cyan-400 mb-1">
-                  <GithubIcon className="w-4 h-4" />
-                  <span className="text-xs font-bold text-slate-200">GitHub</span>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                  <div className="flex items-center gap-2 text-cyan-400 mb-1">
+                    <GithubIcon className="w-4 h-4" />
+                    <span className="text-xs font-bold text-slate-200">GitHub</span>
+                  </div>
+                  <a
+                    href={personalData.socialLinks.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-slate-300 hover:text-white underline underline-offset-2 flex items-center gap-1"
+                  >
+                    <span>@riyad-devx</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
                 </div>
-                <a
-                  href={personalData.socialLinks.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-slate-300 hover:text-white underline underline-offset-2 flex items-center gap-1"
-                >
-                  <span>@riyad-devx</span>
-                  <ExternalLink className="w-3 h-3" />
-                </a>
+
+                <div className="rounded-2xl border border-slate-800 bg-slate-900/60 p-4">
+                  <div className="flex items-center gap-2 text-blue-400 mb-1">
+                    <LinkedinIcon className="w-4 h-4" />
+                    <span className="text-xs font-bold text-slate-200">LinkedIn</span>
+                  </div>
+                  <a
+                    href={personalData.socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-slate-300 hover:text-white underline underline-offset-2 flex items-center gap-1"
+                  >
+                    <span>md-riyad32</span>
+                    <ExternalLink className="w-3 h-3" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>

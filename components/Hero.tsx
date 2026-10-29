@@ -17,7 +17,6 @@ import { personalData } from "@/data/personal";
 
 export default function Hero() {
   const [isResumeModalOpen, setIsResumeModalOpen] = useState(false);
-  const [showLinkedInNotice, setShowLinkedInNotice] = useState(false);
 
   return (
     <section
@@ -68,7 +67,7 @@ export default function Hero() {
               <span className="hidden sm:inline text-slate-600">•</span>
               <div className="flex items-center gap-1.5">
                 <Sparkles className="w-4 h-4 text-violet-400 shrink-0" />
-                <span>Diploma in CST (3rd Sem) • Moulvibazar Polytechnic</span>
+                <span>Diploma in CST • Moulvibazar Polytechnic</span>
               </div>
             </div>
 
@@ -110,7 +109,7 @@ export default function Hero() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-violet-500 hover:bg-violet-950/40 text-slate-300 hover:text-white transition-all hover:-translate-y-0.5 shadow-sm"
-                aria-label="Visit Riyad Mia's GitHub profile"
+                aria-label="Visit Tamim mia Riyad's GitHub profile"
                 title="GitHub: @riyad-devx"
               >
                 <GithubIcon className="w-5 h-5" />
@@ -120,33 +119,23 @@ export default function Hero() {
               <a
                 href={personalData.socialLinks.email}
                 className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-cyan-500 hover:bg-cyan-950/40 text-slate-300 hover:text-cyan-300 transition-all hover:-translate-y-0.5 shadow-sm"
-                aria-label="Send email to Riyad Mia"
+                aria-label="Send email to Tamim mia Riyad"
                 title="Email: mdriyadmia01766@gmail.com"
               >
                 <Mail className="w-5 h-5" />
               </a>
 
-              {/* LinkedIn Placeholder with friendly prompt */}
-              <div className="relative">
-                <button
-                  type="button"
-                  onClick={() => setShowLinkedInNotice(!showLinkedInNotice)}
-                  className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/40 text-slate-400 hover:text-blue-300 transition-all hover:-translate-y-0.5 shadow-sm"
-                  aria-label="LinkedIn profile status"
-                  title="LinkedIn: Coming Soon"
-                >
-                  <LinkedinIcon className="w-5 h-5" />
-                </button>
-
-                {showLinkedInNotice && (
-                  <div className="absolute left-1/2 -translate-x-1/2 bottom-12 w-52 p-2.5 rounded-lg bg-slate-900 border border-blue-500/40 text-xs text-slate-200 shadow-xl z-20 text-center animate-in fade-in">
-                    <p className="font-semibold text-blue-300 mb-0.5">LinkedIn Profile</p>
-                    <p className="text-[11px] text-slate-400">
-                      Currently being configured. In the meantime, connect via GitHub or Email!
-                    </p>
-                  </div>
-                )}
-              </div>
+              {/* LinkedIn */}
+              <a
+                href={personalData.socialLinks.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center w-10 h-10 rounded-xl bg-slate-900/70 border border-slate-800 hover:border-blue-500 hover:bg-blue-950/40 text-slate-300 hover:text-blue-300 transition-all hover:-translate-y-0.5 shadow-sm"
+                aria-label="Visit Tamim mia Riyad's LinkedIn profile"
+                title="LinkedIn: md-riyad32"
+              >
+                <LinkedinIcon className="w-5 h-5" />
+              </a>
             </div>
           </div>
 

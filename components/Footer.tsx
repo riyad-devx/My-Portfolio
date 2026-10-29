@@ -107,13 +107,13 @@ export default function Footer() {
             </h4>
             <div className="rounded-xl border border-slate-800/80 bg-slate-900/40 p-3 space-y-1.5 text-xs">
               <p className="font-semibold text-slate-200">
-                Moulvibazar Polytechnic Institute
+                Moulvibazar Government Polytechnic Institute
               </p>
               <p className="text-slate-400">
                 Computer Science &amp; Technology (CST)
               </p>
               <p className="text-[11px] text-emerald-400 font-medium">
-                ● 3rd Semester in progress
+                ● Diploma in Engineering — In Progress
               </p>
             </div>
           </div>
