@@ -4,10 +4,11 @@ A modern, high-performance developer portfolio built with **Next.js 16 (App Rout
 
 ---
 
-## 🚀 Live Demo & Repository
-- **Bazar Dor Live Project:** [https://bazar-dor-ecru-psi.vercel.app/](https://bazar-dor-ecru-psi.vercel.app/)
-- **Bazar Dor Repository:** [https://github.com/riyad-devx/Bazar-Dor](https://github.com/riyad-devx/Bazar-Dor)
-- **Developer GitHub:** [https://github.com/riyad-devx](https://github.com/riyad-devx)
+## 🚀 Live Projects & Repositories
+- **Bazar Dor (বাজার দর):** [Live Demo](https://bazar-dor-ecru-psi.vercel.app/) • [GitHub Repository](https://github.com/riyad-devx/Bazar-Dor)
+- **FitLog Tracker:** [Live Demo](https://my-fit-log-project-11nn.vercel.app/) • [GitHub Repository](https://github.com/riyad-devx/my-fit-log-project)
+- **Bangla News 24 (বাংলা নিউজ ২৪):** [Live Demo](https://bangla-news-24-eight-kohl.vercel.app/) • [GitHub Repository](https://github.com/riyad-devx/Bangla-News-24)
+- **Developer GitHub Profile:** [https://github.com/riyad-devx](https://github.com/riyad-devx)
 
 ---
 
@@ -16,7 +17,7 @@ A modern, high-performance developer portfolio built with **Next.js 16 (App Rout
 - **UI Library:** React 19
 - **Language:** TypeScript 5
 - **Styling:** Tailwind CSS 4
-- **Icons:** Lucide Icons & Custom SVG Icon components
+- **Icons:** React Icons (`react-icons/si`, `react-icons/fa`, `react-icons/vsc`, `react-icons/tb`) & Lucide Icons
 - **Deployment:** Deployment-ready for Vercel (no secret env variables required)
 
 ---
@@ -42,9 +43,8 @@ my-portfolio/
 │   ├── ProfileImage.tsx         # Photo wrapper with fallback to avatar-placeholder.svg
 │   ├── ResumeNoticeModal.tsx    # Accessible modal explaining resume status
 │   ├── About.tsx                # Truthful learning journey & 4 core attributes
-│   ├── Skills.tsx               # Categorized skills (Frontend, Backend, DB, Tools)
+│   ├── Skills.tsx               # Categorized skills with official brand technology icons
 │   ├── Education.tsx            # Diploma in CST at Moulvibazar Polytechnic
-│   ├── Experience.tsx           # Project-based learning & practical experience
 │   ├── ProjectsSection.tsx      # Projects filter grid & GitHub banner
 │   ├── ProjectCard.tsx          # Card with visual banner, status & detail links
 │   ├── ContactSection.tsx       # Direct contact cards (Email, Tel, WhatsApp) & message form
@@ -52,13 +52,13 @@ my-portfolio/
 │   └── Icons.tsx                # Dedicated SVG icons (GitHub, LinkedIn)
 ├── data/
 │   ├── personal.ts              # Centralized personal info, skills & education data
-│   └── projects.ts              # Structured project profiles & metadata
+│   └── projects.ts              # Structured project profiles (Bazar Dor, FitLog, Bangla News 24)
 └── public/
     └── images/
         ├── avatar-placeholder.svg # Sleek developer avatar SVG fallback
         ├── bazar-dor.svg          # Bazar Dor UI preview banner
-        ├── user-crud.svg          # User CRUD dashboard preview banner
-        └── fitlog.svg             # FitLog tracker preview banner
+        ├── fitlog.svg             # FitLog tracker preview banner
+        └── bangla-news-24.svg     # Bangla News 24 preview banner
 ```
 
 ---
@@ -90,29 +90,9 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 ```bash
 npm run build
 ```
-Generates statically optimized pages for all routes (`/`, `/projects/bazar-dor`, `/projects/user-management-crud`, `/projects/fitlog`, `/robots.txt`, `/sitemap.xml`).
+Generates statically optimized pages for all routes (`/`, `/projects/bazar-dor`, `/projects/fitlog`, `/projects/bangla-news-24`, `/robots.txt`, `/sitemap.xml`).
 
 ### 4. Code Quality & Linting
 ```bash
 npm run lint
 ```
-
----
-
-## 🚢 Push to GitHub & Deploy on Vercel
-
-### Step 1: Commit and Push to GitHub
-```bash
-git add .
-git commit -m "feat: complete responsive developer portfolio website"
-git branch -M main
-git remote add origin https://github.com/riyad-devx/portfolio.git   # Replace with your repo URL
-git push -u origin main
-```
-
-### Step 2: Deploy to Vercel
-1. Go to [https://vercel.com](https://vercel.com) and log in with your GitHub account.
-2. Click **"Add New"** > **"Project"**.
-3. Import your portfolio repository.
-4. Leave build settings as default (Framework: **Next.js**, Build Command: `next build`).
-5. Click **"Deploy"**. The site will deploy in under 1 minute without any required environment variables.

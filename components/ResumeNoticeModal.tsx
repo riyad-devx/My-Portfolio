@@ -74,25 +74,32 @@ export default function ResumeNoticeModal({
 
         {/* Body Text */}
         <p className="text-sm leading-relaxed text-slate-300 mb-5">
-          My updated technical resume is currently being finalized with 3rd semester
-          diploma coursework, my latest full-stack projects (including{" "}
-          <strong className="text-violet-300">Bazar Dor</strong> on Vercel), and my
-          growing Node.js / MongoDB skills.
+          My technical resume is currently being finalized, highlighting my
+          Diploma in Engineering coursework and latest full-stack projects.
+          (including <strong className="text-violet-300">Bazar Dor</strong> on
+          Vercel), and my growing Node.js / MongoDB skills.
         </p>
 
         <div className="rounded-xl border border-slate-800 bg-slate-900/60 p-4 mb-6 space-y-2 text-xs text-slate-300">
           <div className="flex items-center gap-2 text-slate-200 font-semibold">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>Expected Release: Ready for upcoming junior/internship applications</span>
+            <span>
+              Expected Release: Ready for upcoming junior/internship
+              applications
+            </span>
           </div>
           <div className="flex items-center gap-2 text-slate-300">
             <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0" />
-            <span>Includes: Live project links, CST coursework & verified GitHub repos</span>
+            <span>
+              Includes: Live project links, CST coursework & verified GitHub
+              repos
+            </span>
           </div>
         </div>
 
         <p className="text-xs text-slate-400 mb-4">
-          Need an immediate copy or have an inquiry? Feel free to reach out directly:
+          Need an immediate copy or have an inquiry? Feel free to reach out
+          directly:
         </p>
 
         {/* Action Buttons */}
@@ -127,4 +134,3 @@ export default function ResumeNoticeModal({
     </div>
   );
 }
-

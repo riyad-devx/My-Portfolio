@@ -4,7 +4,7 @@ export interface Project {
   tagline: string;
   category: "Full Stack" | "Frontend" | "Web App";
   featured: boolean;
-  status: "Live & Deployed" | "In Development" | "Backend in Progress";
+  status: "Live & Deployed" | "In Development";
   summary: string;
   image: string;
   imageAlt: string;
@@ -87,81 +87,23 @@ export const projectsData: Project[] = [
     ],
   },
   {
-    slug: "user-management-crud",
-    title: "User Management CRUD Application",
-    tagline: "Full-Stack User Directory with REST API & MongoDB",
-    category: "Full Stack",
-    featured: true,
-    status: "In Development",
-    summary:
-      "A complete full-stack web application implementing robust Create, Read, Update, and Delete operations with Express.js, MongoDB data persistence, and a modern Next.js/React frontend.",
-    image: "/images/user-crud.svg",
-    imageAlt: "User Management CRUD Application Preview",
-    liveUrl: null, // User specified: show Coming Soon until configured
-    githubUrl: null, // User specified: show Coming Soon until configured
-    technologies: ["Next.js", "React", "Node.js", "Express.js", "MongoDB", "Mongoose", "Tailwind CSS"],
-    techBreakdown: {
-      frontend: ["Next.js", "React Hooks", "Tailwind CSS"],
-      backend: ["Node.js", "Express.js", "RESTful API Architecture", "CORS Middleware"],
-      database: ["MongoDB", "Mongoose Schema Modeling"],
-      styling: ["Tailwind CSS", "Modal UI components", "Responsive Data Tables"],
-      tools: ["Postman", "Git", "VS Code", "MongoDB Compass"],
-    },
-    overview:
-      "This application serves as a comprehensive full-stack benchmark project, demonstrating client-server communication, schema validation, and complete CRUD cycles. It allows administrators to register users, manage roles, update profiles, and delete inactive entries through an interactive dashboard.",
-    motivation:
-      "To solidify my understanding of the MERN stack architecture, I built this system to master backend API creation, error propagation, HTTP status codes, and database connection handling from the ground up.",
-    keyFeatures: [
-      "Complete CRUD Workflow: Seamless creation, viewing, updating, and deletion of user records.",
-      "RESTful API Backend: Express.js routers and controllers adhering to standard REST guidelines.",
-      "MongoDB & Mongoose Validation: Strict schema modeling with validation for required fields, unique emails, and valid roles.",
-      "Search & Filter: Real-time client-side search to locate users by name, email, or role.",
-      "Feedback & Confirmation Modals: Safety prompts before destructive delete actions and responsive feedback toasts.",
-    ],
-    architectureDetails: [
-      "Decoupled architecture where the Next.js frontend interacts with Express.js API endpoints via async fetch services.",
-      "Mongoose models with built-in schema constraints ensuring data sanitization before reaching the database.",
-      "Centralized error handling middleware on the backend providing clear JSON error responses to the client.",
-    ],
-    challenges: [
-      {
-        challenge:
-          "Handling asynchronous API states (loading, errors, success) gracefully in the UI without freezing user interactions.",
-        solution:
-          "Created modular status state hooks and loading skeletons that provide immediate feedback during API requests.",
-      },
-      {
-        challenge:
-          "Ensuring CORS headers and request formatting align properly between separate local development ports.",
-        solution:
-          "Configured Express CORS middleware with exact origin rules and standard HTTP header configurations.",
-      },
-    ],
-    futureImprovements: [
-      "JWT-based user authentication and password hashing with bcrypt.",
-      "Role-Based Access Control (RBAC) separating Super Admin, Editor, and Standard User privileges.",
-      "Export and Import user data to CSV / JSON format.",
-      "Audit trail logging tracking who created, updated, or removed each account.",
-    ],
-  },
-  {
     slug: "fitlog",
     title: "FitLog – Workout & Fitness Tracker",
     tagline: "Personal Routine Logging & Streak Tracker",
     category: "Web App",
     featured: true,
-    status: "In Development",
+    status: "Live & Deployed",
     summary:
       "A distraction-free fitness and workout tracking web application designed to log daily gym routines, track weight/rep progression, maintain exercise streaks, and monitor personal bests.",
     image: "/images/fitlog.svg",
     imageAlt: "FitLog Workout & Fitness Tracker Preview",
-    liveUrl: null, // In Development
+    liveUrl: "https://my-fit-log-project-11nn.vercel.app/",
     githubUrl: "https://github.com/riyad-devx/my-fit-log-project",
-    technologies: ["React", "Next.js", "Tailwind CSS", "JavaScript", "LocalStorage API"],
+    technologies: ["React", "Next.js", "Tailwind CSS", "TypeScript", "Vercel"],
     techBreakdown: {
-      frontend: ["Next.js App Router", "React State & Context", "Tailwind CSS"],
+      frontend: ["Next.js App Router", "React State & Context", "TypeScript"],
       styling: ["Tailwind CSS", "Dark Mode Gym Theme", "Responsive Touch Targets"],
-      tools: ["Git", "GitHub", "VS Code"],
+      tools: ["Git", "GitHub", "VS Code", "Vercel Deployment"],
     },
     overview:
       "FitLog eliminates the clutter of bloated fitness apps by providing a fast, streamlined tool for gym-goers. Users can quickly choose workout splits (Push, Pull, Legs, Full Body), record sets, weights, and repetitions in real time, and visualize their daily workout consistency.",
@@ -172,7 +114,7 @@ export const projectsData: Project[] = [
       "Routine Presets & Custom Splits: Select from standard workout routines (PPL, Upper/Lower) or create custom exercise routines.",
       "Consistency Streak Tracker: Visual indicators showing consecutive workout days to promote gym habit building.",
       "Dark Theme Gym UI: High-contrast dark styling designed specifically for low-light gym floors.",
-      "Persistent Storage: Automatically preserves user workout entries and personal records across sessions.",
+      "Live Production App: Deployed on Vercel with high performance and mobile-friendly usability.",
     ],
     architectureDetails: [
       "Component-based architecture organizing individual workout sessions, exercise groups, and set rows.",
@@ -199,6 +141,62 @@ export const projectsData: Project[] = [
       "Cloud backend integration with MongoDB for cross-device workout sync.",
     ],
   },
+  {
+    slug: "bangla-news-24",
+    title: "Bangla News 24 (বাংলা নিউজ ২৪)",
+    tagline: "Modern Bengali News Portal & Breaking Updates Platform",
+    category: "Web App",
+    featured: true,
+    status: "Live & Deployed",
+    summary:
+      "A fast, modern Bengali digital news portal delivering breaking news, categorized journalism across National, World, Tech, and Sports, clean typography, and a mobile-optimized reader experience.",
+    image: "/images/bangla-news-24.svg",
+    imageAlt: "Bangla News 24 - Digital News Portal Preview",
+    liveUrl: "https://bangla-news-24-eight-kohl.vercel.app/",
+    githubUrl: "https://github.com/riyad-devx/Bangla-News-24",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "REST APIs", "Vercel"],
+    techBreakdown: {
+      frontend: ["Next.js App Router", "React Components", "TypeScript"],
+      styling: ["Tailwind CSS", "Editorial Typography", "Dark/Light Contrast Grids"],
+      tools: ["Git", "GitHub", "Vercel Deployment", "VS Code"],
+    },
+    overview:
+      "Bangla News 24 is a dedicated digital journalism platform built for Bengali-speaking readers worldwide. It delivers breaking news headlines, categorized coverage, and an uncluttered, responsive layout optimized for smartphones and modern web browsers.",
+    motivation:
+      "Many traditional news portals are cluttered with distracting ads and sluggish layout shifts. I wanted to engineer a crisp, high-performance news reading application with modern front-end techniques, clean Bengali typography, and instant page transitions.",
+    keyFeatures: [
+      "Breaking News Ticker: Live ticker bar spotlighting urgent news developments in real-time.",
+      "Categorized News Feed: Streamlined browsing across National, International, Technology, Sports, and Business.",
+      "Editorial Bengali Typography: Carefully balanced leading, font weights, and spacing tailored for Bengali text.",
+      "Responsive Article Grid: Adaptive magazine-style layout scaling smoothly across mobile phones, tablets, and wide monitors.",
+      "Production Deployment: Deployed on Vercel with automated continuous delivery and optimized static page delivery.",
+    ],
+    architectureDetails: [
+      "Modular component hierarchy separating headline banners, categorized story cards, breaking news tickers, and footer indexes.",
+      "Tailwind CSS responsive grid system maintaining consistent aspect ratios for editorial imagery and headlines.",
+      "Optimized Next.js routing allowing rapid navigation between news categories with minimal data overhead.",
+    ],
+    challenges: [
+      {
+        challenge:
+          "Designing an editorial multi-column layout that naturally collapses into an intuitive single-column feed on smartphones without sacrificing visual hierarchy.",
+        solution:
+          "Leveraged Tailwind CSS CSS grid and flexbox breakpoints with responsive font sizing to maintain lead-story prominence across all device sizes.",
+      },
+      {
+        challenge:
+          "Rendering complex Bengali script smoothly without awkward line wrapping or clipped letter descenders.",
+        solution:
+          "Customized line-height ratios and font smoothing rules to deliver maximum reading comfort on mobile screens.",
+      },
+    ],
+    futureImprovements: [
+      "Bookmark and offline reading mode for articles using LocalStorage or Service Workers.",
+      "Interactive reader comments and article reaction voting system.",
+      "Category-specific push notifications for breaking national news.",
+      "Integration of real-time weather and stock market tickers for Bangladesh.",
+    ],
+  },
 ];
 
 export function getProjectBySlug(slug: string): Project | undefined {
@@ -208,4 +206,3 @@ export function getProjectBySlug(slug: string): Project | undefined {
 export function getAllProjectSlugs(): string[] {
   return projectsData.map((project) => project.slug);
 }
-

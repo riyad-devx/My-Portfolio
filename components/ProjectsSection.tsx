@@ -7,10 +7,13 @@ import ProjectCard from "./ProjectCard";
 import { projectsData } from "@/data/projects";
 import { personalData } from "@/data/personal";
 
-type FilterCategory = "All" | "Full Stack" | "Web App";
-
 export default function ProjectsSection() {
-  const [activeFilter, setActiveFilter] = useState<FilterCategory>("All");
+  const categories = [
+    "All",
+    ...Array.from(new Set(projectsData.map((p) => p.category))),
+  ];
+
+  const [activeFilter, setActiveFilter] = useState<string>("All");
 
   const filteredProjects = projectsData.filter((project) => {
     if (activeFilter === "All") return true;
@@ -34,28 +37,30 @@ export default function ProjectsSection() {
             Selected <span className="gradient-text-purple">Projects</span>
           </h2>
           <p className="mt-3 max-w-2xl text-slate-300 text-sm sm:text-base">
-            Real projects built with modern web technologies. Click &apos;View Details&apos; to explore
+            Real, live-deployed web applications built with modern web technologies. Click &apos;View Details&apos; to explore
             architecture decisions, challenges overcome, and future roadmaps.
           </p>
           <div className="w-16 h-1 bg-gradient-to-r from-violet-500 to-cyan-400 rounded-full mt-4" />
         </div>
 
         {/* Filter Tabs */}
-        <div className="flex items-center justify-center gap-2 mb-12">
-          {(["All", "Full Stack", "Web App"] as FilterCategory[]).map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveFilter(category)}
-              className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
-                activeFilter === category
-                  ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-900/30 scale-105"
-                  : "bg-slate-900/70 text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-800"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        {categories.length > 1 && (
+          <div className="flex items-center justify-center gap-2 mb-12">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveFilter(category)}
+                className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold transition-all duration-200 ${
+                  activeFilter === category
+                    ? "bg-gradient-to-r from-violet-600 to-purple-600 text-white shadow-lg shadow-violet-900/30 scale-105"
+                    : "bg-slate-900/70 text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-800"
+                }`}
+              >
+                {category === "All" ? "All Projects" : category}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

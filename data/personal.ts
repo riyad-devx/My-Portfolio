@@ -20,16 +20,6 @@ export interface EducationItem {
   highlights: string[];
 }
 
-export interface ExperienceItem {
-  role: string;
-  context: string;
-  period: string;
-  statusTag: string;
-  description: string;
-  responsibilities: string[];
-  technologies: string[];
-}
-
 export const personalData = {
   name: "Riyad Mia",
   shortName: "Riyad",
@@ -143,23 +133,4 @@ export const personalData = {
       ],
     },
   ] as EducationItem[],
-  experience: [
-    {
-      role: "Self-Directed Developer & Project-Based Learning",
-      context: "Independent Study & Personal Projects",
-      period: "2024 – Present",
-      statusTag: "Hands-on Practice",
-      description:
-        "Dedicated to structured self-study and building full-stack web applications from scratch, translating conceptual knowledge into functional, deployed software.",
-      responsibilities: [
-        "Architected and deployed responsive web applications including 'Bazar Dor' (daily commodity price tracker) on Vercel.",
-        "Engineered RESTful APIs with Express.js and structured data schemas with MongoDB and Mongoose.",
-        "Employed Git and GitHub for disciplined version control, commit conventions, and repository maintenance.",
-        "Implemented mobile-first, accessible user interfaces using React, Next.js, and modern Tailwind CSS.",
-        "Actively preparing for junior web developer roles and technical software engineering internships.",
-      ],
-      technologies: ["JavaScript", "React", "Next.js", "Tailwind CSS", "Node.js", "Express.js", "MongoDB", "Git", "GitHub"],
-    },
-  ] as ExperienceItem[],
 };
-

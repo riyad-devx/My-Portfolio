@@ -53,7 +53,7 @@ export async function generateMetadata({
     title: project.title,
     description: project.summary,
     openGraph: {
-      title: `${project.title} | Riyad Mia Portfolio`,
+      title: `${project.title} | Tamim Mia Riyad Portfolio`,
       description: project.summary,
       images: [
         {

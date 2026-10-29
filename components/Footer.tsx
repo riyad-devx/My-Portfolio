@@ -85,9 +85,6 @@ export default function Footer() {
               <a href="#education" className="text-slate-400 hover:text-violet-300 transition-colors">
                 Education
               </a>
-              <a href="#experience" className="text-slate-400 hover:text-violet-300 transition-colors">
-                Experience
-              </a>
               <a href="#projects" className="text-slate-400 hover:text-violet-300 transition-colors">
                 Projects
               </a>
@@ -96,6 +93,9 @@ export default function Footer() {
               </a>
               <Link href="/projects/bazar-dor" className="text-slate-400 hover:text-cyan-300 transition-colors">
                 Bazar Dor
+              </Link>
+              <Link href="/projects/bangla-news-24" className="text-slate-400 hover:text-cyan-300 transition-colors">
+                Bangla News 24
               </Link>
             </div>
           </div>

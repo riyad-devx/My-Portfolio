@@ -11,7 +11,6 @@ const navLinks = [
   { name: "About", href: "#about", targetId: "about" },
   { name: "Skills", href: "#skills", targetId: "skills" },
   { name: "Education", href: "#education", targetId: "education" },
-  { name: "Experience", href: "#experience", targetId: "experience" },
   { name: "Projects", href: "#projects", targetId: "projects" },
   { name: "Contact", href: "#contact", targetId: "contact" },
 ];
@@ -163,7 +162,7 @@ export default function Navbar() {
                   Navigation Menu
                 </span>
                 <span className="flex items-center gap-1 text-[11px] text-slate-400">
-                  <Sparkles className="w-3 h-3 text-cyan-400" /> Riyad Portfolio
+                  <Sparkles className="w-3.5 h-3.5 text-cyan-400" /> Riyad Portfolio
                 </span>
               </div>
 
@@ -203,4 +202,3 @@ export default function Navbar() {
     </header>
   );
 }
-

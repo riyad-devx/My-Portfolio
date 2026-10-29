@@ -7,7 +7,6 @@ import {
   ArrowRight,
   Sparkles,
   MapPin,
-  ExternalLink,
   Code2,
   Database,
 } from "lucide-react";
@@ -168,28 +167,6 @@ export default function Hero() {
                 <Database className="w-4 h-4 text-emerald-400" />
                 <span>Node &amp; MongoDB</span>
               </div>
-            </div>
-
-            {/* Quick Live Project Callout below photo */}
-            <div className="mt-8 w-full max-w-sm rounded-xl border border-slate-800/80 bg-slate-900/50 backdrop-blur-md p-3.5 flex items-center justify-between shadow-inner">
-              <div className="flex items-center gap-2.5">
-                <div className="h-8 w-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 font-bold text-xs">
-                  ব
-                </div>
-                <div className="text-left">
-                  <p className="text-xs font-bold text-slate-200">Featured: Bazar Dor</p>
-                  <p className="text-[11px] text-slate-400">Daily market price web app</p>
-                </div>
-              </div>
-              <a
-                href="https://bazar-dor-ecru-psi.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-xs font-semibold text-violet-400 hover:text-violet-300"
-              >
-                <span>Live</span>
-                <ExternalLink className="w-3 h-3" />
-              </a>
             </div>
           </div>
         </div>

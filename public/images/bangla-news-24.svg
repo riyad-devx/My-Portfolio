@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="newsBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e1c" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#191530" />
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="50%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <filter id="newsShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#newsBg)" />
+
+  <!-- Subtle Newspaper / Grid pattern -->
+  <g stroke="#334155" stroke-width="1" opacity="0.15">
+    <line x1="0" y1="90" x2="800" y2="90" />
+    <line x1="0" y1="180" x2="800" y2="180" />
+    <line x1="0" y1="270" x2="800" y2="270" />
+    <line x1="0" y1="360" x2="800" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="500" />
+    <line x1="400" y1="0" x2="400" y2="500" />
+    <line x1="600" y1="0" x2="600" y2="500" />
+  </g>
+
+  <!-- Main Window -->
+  <g transform="translate(60, 40)" filter="url(#newsShadow)">
+    <rect width="680" height="420" rx="16" fill="#0f172a" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Top Window Titlebar -->
+    <rect width="680" height="44" rx="16" fill="#090d16" />
+    <rect y="34" width="680" height="10" fill="#090d16" />
+    <line x1="0" y1="44" x2="680" y2="44" stroke="#1e293b" stroke-width="1" />
+
+    <!-- Window Dots -->
+    <circle cx="28" cy="22" r="6" fill="#ef4444" />
+    <circle cx="48" cy="22" r="6" fill="#eab308" />
+    <circle cx="68" cy="22" r="6" fill="#22c55e" />
+
+    <text x="340" y="27" text-anchor="middle" font-family="monospace" font-size="12" fill="#94a3b8">https://bangla-news-24-eight-kohl.vercel.app</text>
+
+    <!-- News Header Branding -->
+    <g transform="translate(30, 62)">
+      <!-- Logo badge -->
+      <rect x="0" y="0" width="40" height="36" rx="8" fill="url(#redAccent)" />
+      <text x="20" y="24" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="900" fill="#ffffff">২৪</text>
+      
+      <text x="52" y="22" font-family="system-ui, sans-serif" font-size="20" font-weight="800" fill="#ffffff">বাংলা নিউজ <tspan fill="#ef4444">২৪</tspan></text>
+      <text x="52" y="38" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">Bangla News 24 – 24/7 Live Digital Journalism</text>
+
+      <!-- Live badge -->
+      <rect x="520" y="6" width="100" height="24" rx="12" fill="#450a0a" stroke="#dc2626" stroke-width="1" />
+      <circle cx="534" cy="18" r="4" fill="#f87171" />
+      <text x="546" y="22" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#fca5a5">Live News</text>
+    </g>
+
+    <!-- Breaking News Ticker bar -->
+    <g transform="translate(30, 116)">
+      <rect width="620" height="28" rx="6" fill="#1e1b4b" stroke="#4338ca" stroke-width="1" />
+      <rect width="85" height="28" rx="6" fill="#ef4444" />
+      <text x="42" y="19" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="800" fill="#ffffff">সদ্য সংবাদ</text>
+      <text x="96" y="19" font-family="system-ui, sans-serif" font-size="11" fill="#c7d2fe">প্রযুক্তি ও আধুনিক ওয়েব উন্নয়নে তরুণ প্রজন্মের ব্যাপক অগ্রগতি...</text>
+    </g>
+
+    <!-- News Layout Grid: Main Headline (Left) & Side Headlines (Right) -->
+    <g transform="translate(30, 158)">
+      <!-- Lead Story Card (Left 380px) -->
+      <rect x="0" y="0" width="375" height="230" rx="12" fill="#141a29" stroke="#1e293b" stroke-width="1" />
+      
+      <!-- Lead image placeholder mockup -->
+      <rect x="12" y="12" width="351" height="110" rx="8" fill="#1e293b" />
+      <text x="187" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#64748b">ফিচারড ফটো / সংবাদ ছবি</text>
+      <rect x="22" y="22" width="55" height="18" rx="4" fill="#ef4444" />
+      <text x="49" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#ffffff">জাতীয়</text>
+
+      <text x="16" y="145" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#f8fafc">ডিজিটাল প্রযুক্তিতে এগিয়ে যাচ্ছে বাংলাদেশ</text>
+      <text x="16" y="168" font-family="system-ui, sans-serif" font-size="11" fill="#94a3b8">ওয়েব ডেভেলপমেন্ট এবং সফটওয়্যার ইঞ্জিনিয়ারিং খাতে নতুন দিগন্ত উন্মোচিত হচ্ছে...</text>
+      
+      <line x1="16" y1="198" x2="359" y2="198" stroke="#1e293b" stroke-width="1" />
+      <text x="16" y="215" font-family="system-ui, sans-serif" font-size="10" fill="#64748b">১০ মিনিট আগে • বাংলা নিউজ ২৪ বিশেষ প্রতিবেদন</text>
+
+      <!-- Side Stories List (Right 230px) -->
+      <g transform="translate(390, 0)">
+        <!-- Side Story 1 -->
+        <rect x="0" y="0" width="230" height="68" rx="10" fill="#141a29" stroke="#1e293b" stroke-width="1" />
+        <rect x="10" y="10" width="48" height="48" rx="6" fill="#1e293b" />
+        <text x="34" y="38" text-anchor="middle" font-size="14">💻</text>
+        <text x="68" y="26" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">প্রযুক্তি বিশ্ব</text>
+        <text x="68" y="42" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">নতুন প্রজন্মের ফ্রেমওয়ার্ক</text>
+        <text x="68" y="54" font-family="system-ui, sans-serif" font-size="9" fill="#06b6d4">Next.js &amp; React আপডেট</text>
+
+        <!-- Side Story 2 -->
+        <rect x="0" y="80" width="230" height="68" rx="10" fill="#141a29" stroke="#1e293b" stroke-width="1" />
+        <rect x="10" y="90" width="48" height="48" rx="6" fill="#1e293b" />
+        <text x="34" y="118" text-anchor="middle" font-size="14">🏏</text>
+        <text x="68" y="106" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">খেলাধুলা</text>
+        <text x="68" y="122" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">আন্তর্জাতিক ক্রিকেট টুর্নামেন্ট</text>
+        <text x="68" y="134" font-family="system-ui, sans-serif" font-size="9" fill="#22c55e">লাইভ স্কোর ও হাইলাইটস</text>
+
+        <!-- Side Story 3 -->
+        <rect x="0" y="160" width="230" height="70" rx="10" fill="#141a29" stroke="#1e293b" stroke-width="1" />
+        <rect x="10" y="170" width="48" height="50" rx="6" fill="#1e293b" />
+        <text x="34" y="198" text-anchor="middle" font-size="14">🌍</text>
+        <text x="68" y="186" font-family="system-ui, sans-serif" font-size="11" font-weight="700" fill="#f8fafc">আন্তর্জাতিক</text>
+        <text x="68" y="202" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">বিশ্ব অর্থনীতি ও বাণিজ্যের গতি</text>
+        <text x="68" y="214" font-family="system-ui, sans-serif" font-size="9" fill="#a855f7">বিশ্লেষণ ও পর্যালোচনা</text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -24,13 +24,13 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL("https://riyad-portfolio.vercel.app"),
   title: {
-    default: "Riyad Mia | Aspiring Full Stack Developer",
-    template: "%s | Riyad Mia",
+    default: "Tamim Mia Riyad | Aspiring Full Stack Developer",
+    template: "%s | Tamim Mia Riyad",
   },
   description:
-    "Portfolio of Riyad Mia, Aspiring Full Stack Developer & CST Diploma student at Moulvibazar Polytechnic Institute. Building responsive, accessible web applications with React, Next.js, Node.js, and MongoDB.",
+    "Portfolio of Tamim Mia Riyad, Aspiring Full Stack Developer & CST Diploma student at Moulvibazar Polytechnic Institute. Building responsive, accessible web applications with React, Next.js, Node.js, and MongoDB.",
   keywords: [
-    "Riyad Mia",
+    "Tamim Mia Riyad",
     "Aspiring Full Stack Developer",
     "React Developer",
     "Next.js Developer",
@@ -42,28 +42,28 @@ export const metadata: Metadata = {
     "Portfolio",
     "Bangladesh Developer",
   ],
-  authors: [{ name: "Riyad Mia", url: "https://github.com/riyad-devx" }],
-  creator: "Riyad Mia",
+  authors: [{ name: "Tamim Mia Riyad", url: "https://github.com/riyad-devx" }],
+  creator: "Tamim Mia Riyad",
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://riyad-portfolio.vercel.app",
-    title: "Riyad Mia | Aspiring Full Stack Developer",
+    title: "Tamim Mia Riyad | Aspiring Full Stack Developer",
     description:
       "Aspiring Full Stack Developer & CST Diploma student building responsive, modern web applications with React, Next.js, and Node.js.",
-    siteName: "Riyad Mia Portfolio",
+    siteName: "Tamim Mia Riyad Portfolio",
     images: [
       {
         url: "/images/avatar-placeholder.svg",
         width: 1200,
         height: 630,
-        alt: "Riyad Mia - Aspiring Full Stack Developer",
+        alt: "Tamim Mia Riyad - Aspiring Full Stack Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Riyad Mia | Aspiring Full Stack Developer",
+    title: "Tamim Mia Riyad| Aspiring Full Stack Developer",
     description:
       "Aspiring Full Stack Developer building responsive, modern web applications with React, Next.js, and Node.js.",
     images: ["/images/avatar-placeholder.svg"],

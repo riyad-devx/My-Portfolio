@@ -82,7 +82,7 @@ export default function About() {
                     Moulvibazar Polytechnic Institute
                   </h4>
                   <p className="text-xs text-slate-400">
-                    Diploma in Computer Science &amp; Technology (CST) • 3rd Semester
+                    Diploma in Computer Science &amp; Technology (CST) • 
                   </p>
                 </div>
               </div>

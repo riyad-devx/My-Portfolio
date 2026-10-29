@@ -8,7 +8,7 @@ interface ProfileImageProps {
 }
 
 export default function ProfileImage({ className = "" }: ProfileImageProps) {
-  // Defaults to trying /profile.jpg, but falls back seamlessly to /images/avatar-placeholder.svg
+  // Uses /profile.jpg, falling back seamlessly to /images/avatar-placeholder.svg
   const [imageSrc, setImageSrc] = useState<string>("/profile.jpg");
   const [hasError, setHasError] = useState<boolean>(false);
 
@@ -29,7 +29,7 @@ export default function ProfileImage({ className = "" }: ProfileImageProps) {
         <div className="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 rounded-full overflow-hidden bg-[#0d1224] border-2 border-[#1e293b]">
           <Image
             src={imageSrc}
-            alt="Riyad Mia - Profile Photo / Monogram Placeholder"
+            alt="Riyad Mia - Aspiring Full Stack Developer"
             fill
             sizes="(max-width: 640px) 256px, (max-width: 1024px) 288px, 320px"
             priority
@@ -37,7 +37,7 @@ export default function ProfileImage({ className = "" }: ProfileImageProps) {
             className="object-cover transition-transform duration-500 group-hover:scale-105"
           />
 
-          {/* Graceful Overlay Hint if using placeholder */}
+          {/* Graceful Overlay Hint only if using fallback avatar */}
           {hasError && (
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex flex-col justify-end p-4 text-center">
               <span className="text-[11px] font-medium text-slate-300 drop-shadow">
@@ -59,4 +59,3 @@ export default function ProfileImage({ className = "" }: ProfileImageProps) {
     </div>
   );
 }
-

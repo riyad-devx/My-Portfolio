@@ -4,7 +4,6 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Education from "@/components/Education";
-import Experience from "@/components/Experience";
 import ProjectsSection from "@/components/ProjectsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -28,9 +27,6 @@ export default function Home() {
 
         {/* Education Section */}
         <Education />
-
-        {/* Experience Section */}
-        <Experience />
 
         {/* Projects Section */}
         <ProjectsSection />
